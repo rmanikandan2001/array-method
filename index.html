@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>array methods in table</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<table>
+				<caption><h3>Array Methods in Table</h3></caption>
+				
+					<tr>
+						<th>method</th>
+						<th>programm/code</th>
+						<th>output</th>
+					</tr>
+					
+					<tr>
+						<td>Array length<p>returns the length (size) of an array</p></td>
+						
+						<td>
+							let num = [1,2,3];					<br>
+							console.log(num.length);
+						</td>
+						
+						<td>output : 6</td>
+					</tr>
+					
+					<tr>
+						<td>Array to string()<p>converts an array to a string of (comma separated) array values</p></td>
+						
+						<td>
+							let num = [1,2,3];					<br>
+							console.log(num.toString());
+						</td>
+						<td>output : 1,2,3</td>
+					</tr>
+					
+					<tr>
+						<td>Array to pop()<p>removes the last element from an array</p></td>
+						
+						<td>
+							let num = [1,2,3];					<br>
+							console.log(num.pop());				<br>
+							console.log(num);					
+						</td>
+						<td>output : 3<br>[1,2]</td>
+					</tr>
+					
+					<tr>
+						<td>Array push()<p>adds a new element to an array (at the end)</p></td>
+						
+						<td>
+							let num = [1,2,3];					<br>
+							console.log(num.push(4));			<br>
+							console.log(num);
+						</td>
+						<td>output : 4<br>[1,2,3,4]</td>
+					</tr>
+					
+					<tr>
+						<td>Array shift()<p>removes the first array element and "shifts" all other elements to a lower index</p></td>
+						
+						<td>
+							let num = [1,2,3,4];				<br>
+							console.log(num.shift());			<br>	
+							console.log(num);
+						</td>
+						<td>output : 1<br>[2,3,4]</td>
+					</tr>
+					
+					
+					<tr>
+						<td>Array unshift()<p>adds a new element to an array (at the beginning), and "unshifts" older elements</p></td>
+						
+						<td>
+							let num = [1,2,3,4]; 					<br>
+							console.log(num.unshift(0));			<br>
+							console.log(num);							
+						</td>
+						<td>output : 5<br>[0,1,2,3,4]</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Array join()<p>returns an array as a string</p></td>
+						
+						<td>
+							let num = [1,2,3,4]; 					<br>
+							console.log(num.join('|'));			
+							
+						</td>
+						<td>output : 1|2|3|4</td>
+						
+					</tr>
+					
+					<tr>
+						<td>Array delete()</td>
+						
+						<td>
+							Array elements can be deleted using the  <br>
+							JavaScript operator delete.              <br>
+
+							Using delete leaves undefined holes in the array.    <br>
+
+							Use pop() or shift() instead.
+						</td>
+						<td>output : nill</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Array concat()<p>creates a new array by merging (concatenating) existing arrays</p></td>
+						
+						<td>
+							let num = [1,2,3];						<br>
+							let number = [4,5];						<br>
+							console.log(num.concat(number));
+						</td>
+						<td>output : [1,2,3,4,5] </td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Array flat()<p>creates a new array with sub-array elements concatenated to a specified depth</p></td>
+						
+						<td>
+							let num = [[1,2],[3,4]];        		<br>
+							console.log(num.flat());
+						</td>
+						<td>output : [1,2,3,4] </td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Array splice()<p>can be used to add new items to an array</p></td>
+						
+						<td>
+							let num = [1,2,3,4];  					<br>
+							console.log(num.splice(1,3));
+						</td>
+						<td>output : [2,3,4] </td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Array slice()<p>slices out a piece of an array</p></td>
+						
+						<td>
+							let num = [1,2,3,4];  					<br>
+							console.log(num.slice(1,3));
+						</td>
+						<td>output : [2,3] </td>
+						
+					</tr>
+			</table>
+		</body>
+	</html>
